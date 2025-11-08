@@ -1,0 +1,23 @@
+Unit Testing Plan — Garden Stage Simulation
+
+Goal:
+The goal of this testing is to make sure that the small parts (functions) of my program
+work correctly before running the full simulation. I will test the function called
+stage_from_string() that changes a stage name like "SEEDLING", "GROWING", or "MATURE"
+into a number. I will also test insert_from_csv_line(), which reads one line of data
+and puts the plant name into the right place in the map.
+
+How I will test:
+I will use a small test program to check these functions. The program will try different
+inputs and see if the output is what we expect. For example, if we send "SEEDLING" to
+stage_from_string(), it should return the number for SEEDLING. If we send a wrong word
+like "TREE", it should return -1. I will also test that good data lines are added to the
+map and bad lines are ignored.
+
+Expected result:
+When all the tests work correctly, the test program will print:
+"[OK] All unit tests passed."
+
+
+
+-----Test_driver.cpp-------
