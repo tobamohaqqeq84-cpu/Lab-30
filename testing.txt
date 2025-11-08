@@ -41,8 +41,9 @@ int stage_from_string(const string& s) {
     return -1;
 }
 bool insert_from_csv_line(const string& line, Env& env){
-    if (!line.empty()) return true;
-    istringstream ss(line);
+    if (line.empty()) return true;
+    string plot, stageStr, plantId;
+    stringstream ss(line);
     if(!getline(ss, plot, ',')) return false;
     if(!getline(ss, stageStr, ',')) return false;
     if(!getline(ss, plantId, ',')) return false;
