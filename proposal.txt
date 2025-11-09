@@ -1,0 +1,15 @@
+This program shows how plants grow over time in a small garden. Each plot in the garden has plants in three stages:
+1: Seeding - newly sprouted plants
+2: Growing - plants that are getting bigger 
+3: Mature -fully growon plants 
+
+The program usesan std::map to keep track of the pllots. Each plot name(like plot-A or lot-B) is the map's key. The value is a 3-element std::array pf std lists, one list for each stage.
+
+The data about the starting plants will come from a file named data.cvs. The file will have at least 100 lines showing which plot each plant blongs to and what stage it is in.
+
+The similation will run for 25 time period, each period:
+- one plant moves from seeding to growing.
+-one plant moves from groeing to mature.
+-sometimes new seeds apear in seeding.
+
+The program will print the number of lants in each stage for each plot so we see how the garden changes over time.
