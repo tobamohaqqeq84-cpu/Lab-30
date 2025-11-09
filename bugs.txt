@@ -27,3 +27,4 @@ Fix: I added a main() function.
 
 Bug: the program showed the same plant name twice. 
 Fix: i fixed it by checking if the plant ID already exists before adding it.
+//the end
