@@ -1,0 +1,29 @@
+Bug: The program saif "file not found"
+Fix: I relized the file name was written as "data.cvs", I changed it to "data.csv".
+
+Bug: The program ran but showed no outputs.
+Fix: i found that print_env was not called in the right place. so i moved it inside the loop.
+
+Bug: The colums of the output looked messy.
+Fix: I was stew was written instead of setw, so i fixed it.
+
+Bug: The load_data() function did not return anything.
+Fix: I added "return true;" at the enf of function to fix the warning.
+
+Bug: When there was nothing written in data.csv, the program crashed.
+Fix: I added the data and then run the program.
+
+Bug: Plants were not moving from groowing to mature.
+Fix: I corrected the simulate_step() logic to pop from one list and push to the next.
+
+Bug: The program printed strange plant Id like N=_string(t).
+Fix: I changed it to N + to_string(t). so new ID prints correctly.
+
+Bug: Replit showed two main files, main and main.cpp
+Fix: I deleted the extra main file so the rigth one compiles 
+
+Bug: The test_driver.cpp file did not compile.
+Fix: I added a main() function.
+
+Bug: the program showed the same plant name twice. 
+Fix: i fixed it by checking if the plant ID already exists before adding it.
